@@ -3,36 +3,37 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/assets/images/Coal.jpg": "b8cf138abe9846e10c91e181f1a0544c",
-"assets/assets/images/company.png": "208c5105ad6a6d0ed84984fa5ef37e0f",
-"assets/assets/images/employee.jpg": "5109afc6aa76d801b6daa68d0c333d13",
-"assets/assets/images/stone.jpg": "108c99b9855837a8194d530f4d9c7dda",
-"assets/assets/images/crusher.jpg": "29286f00eec3677906225d33cfab9853",
-"assets/assets/images/profit.png": "0d0563c108533fd954ac76af02492b92",
-"assets/assets/images/company.jpg": "485e583c014c244d6fb7d7521d9da825",
-"assets/assets/images/crusher_two.jpg": "1ee66ff4f0d834bbe48de622d78dd67a",
+  "assets/AssetManifest.json": "aa05649c4fd524ef2d86ec01072b9c47",
 "assets/assets/images/archive.jpg": "c4fb1d72b74c113ee5d423f646ef6886",
+"assets/assets/images/Coal.jpg": "b8cf138abe9846e10c91e181f1a0544c",
+"assets/assets/images/company.jpg": "485e583c014c244d6fb7d7521d9da825",
+"assets/assets/images/company.png": "208c5105ad6a6d0ed84984fa5ef37e0f",
+"assets/assets/images/crusher.jpg": "29286f00eec3677906225d33cfab9853",
+"assets/assets/images/crusher_two.jpg": "1ee66ff4f0d834bbe48de622d78dd67a",
+"assets/assets/images/employee.jpg": "5109afc6aa76d801b6daa68d0c333d13",
 "assets/assets/images/logo.png": "37ba7708959a9dfb11825a1a1383196e",
-"assets/AssetManifest.json": "aa05649c4fd524ef2d86ec01072b9c47",
+"assets/assets/images/profit.png": "0d0563c108533fd954ac76af02492b92",
+"assets/assets/images/stone.jpg": "108c99b9855837a8194d530f4d9c7dda",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/NOTICES": "ef6ca3da30c9b7c5f0c145cb1f45bea6",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"manifest.json": "88e579204353a3be0e006fce77e3d29f",
-"flutter.js": "eb2682e33f25cd8f1fc59011497c35f8",
-"main.dart.js": "c67a6c046e30f6aa00d845e9f6a809b7",
+"assets/NOTICES": "d22ec2e9ae0835a8903bd530a8d53a9c",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"assets/shaders/ink_sparkle.frag": "ee9b6e6af280e6556c5b8828a80b2cc7",
+"canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
+"canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
+"canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
+"canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
+"flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "icon.ico": "cc8d9f8ce3b7568bff6351046a6b8ea6",
-"index.html": "cd45ae4d9b8f18ee615ed9275a68a187",
-"/": "cd45ae4d9b8f18ee615ed9275a68a187",
-"version.json": "f3cf11fab8067a18ac287bebd03dba46",
-"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
-"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
-"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba",
-"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
-"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c"
+"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
+"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
+"index.html": "cedd66586dec645301341b6ceb0108d9",
+"/": "cedd66586dec645301341b6ceb0108d9",
+"main.dart.js": "9b5f5daf3953502415d78ac636f72162",
+"manifest.json": "88e579204353a3be0e006fce77e3d29f",
+"version.json": "f3cf11fab8067a18ac287bebd03dba46"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -40,7 +41,6 @@ const RESOURCES = {
 const CORE = [
   "main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
@@ -139,9 +139,11 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })
