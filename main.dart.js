@@ -27477,10 +27477,13 @@ arx:function arx(a){this.a=a},
 arr:function arr(a){this.a=a},
 arp:function arp(a){this.a=a},
 arP:function arP(){},
-arQ:function arQ(a){this.a=a},
-arK:function arK(a){this.a=a},
+arQ:function arQ(a,b){this.a=a
+this.b=b},
+arK:function arK(a,b){this.a=a
+this.b=b},
 arG:function arG(a){this.a=a},
-arL:function arL(a){this.a=a},
+arL:function arL(a,b){this.a=a
+this.b=b},
 arF:function arF(a){this.a=a},
 qV:function qV(a,b){this.c=a
 this.a=b},
@@ -94514,7 +94517,7 @@ s=A.A(new A.x(j))
 i=A.D(s,s.gu().A("companies")).ce(0)
 h=A.dM()
 s=this.b
-h.a="chipstonesaleshutarkandi"+B.o.k(s.cx)
+h.a="chipstonesale"+B.o.k(s.cx)
 r=s.dy
 r.toString
 h.b=r
@@ -94620,7 +94623,7 @@ A.w(j,$.L(),!0)
 s=A.A(new A.x(j))
 i=A.D(s,s.gu().A("companies")).ce(0)
 h=A.dM()
-h.a="chipstonesaletamabil"+B.o.k(q.cx)
+h.a="chipstonesale"+B.o.k(q.cx)
 s=q.dy
 s.toString
 h.b=s
@@ -94724,7 +94727,7 @@ A.w(j,$.L(),!0)
 s=A.A(new A.x(j))
 i=A.D(s,s.gu().A("companies")).ce(0)
 h=A.dM()
-h.a="chipstonesalebholaganj"+B.o.k(q.cx)
+h.a="chipstonesale"+B.o.k(q.cx)
 s=q.dy
 s.toString
 h.b=s
@@ -94802,7 +94805,7 @@ akh(){return A.bY(new A.arD(this),this.at.bc("date",!0).be().bf(),t.j)},
 ahV(){return A.bY(new A.arz(this),this.at.bc("date",!0).be().bf(),t.j)},
 a5J(){return A.bY(new A.arr(this),this.at.bc("date",!0).be().bf(),t.j)},
 ba(a){var s=null,r=a.b,q=a.a,p=t.p
-return A.o(s,A.bK(A.o(s,A.H(A.a([A.E(A.a([A.k(s,s,20),A.d("Date",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"date"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Invoice",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"invoice"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Truck No",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"truckCount"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Truck Plate Number",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"truckNumber"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Buyer Name",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"buyerName"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Buyer Contact",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"buyerContact"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("CFT",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"cft"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Rate",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"rate"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Price",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"price"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("3/4",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"threeToFour"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("16 mm",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"oneToSix"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("1/2",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"half"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("5/10",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"fiveToTen"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Remarks",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"remarks"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.bb(s,A.aH(B.b1,B.r,s,s,s),s,new A.arP(),s,s),A.bb(s,A.aH(B.aj,B.r,s,s,s),s,new A.arQ(this),s,s)],p),B.e,B.j,B.h),B.d,s,s,s,s,s,s,s,s,s,s,s),B.a0),B.d,s,s,s,s,s,s,s,B.at,s,s,s)}}
+return A.o(s,A.bK(A.o(s,A.H(A.a([A.E(A.a([A.k(s,s,20),A.d("Date",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"date"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Invoice",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"invoice"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Truck No",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"truckCount"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Truck Plate Number",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"truckNumber"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Buyer Name",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"buyerName"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Buyer Contact",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"buyerContact"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("CFT",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"cft"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Rate",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"rate"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Price",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"price"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("3/4",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"threeToFour"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("16 mm",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"oneToSix"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("1/2",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"half"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("5/10",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"fiveToTen"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.E(A.a([A.d("Remarks",s,s,s,A.c(s,s,B.b,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.d(A.b(r.h(0,"remarks"),q),s,s,s,A.c(s,s,B.p,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],p),B.e,B.j,B.h),A.k(s,s,70),A.bb(s,A.aH(B.b1,B.r,s,s,s),s,new A.arP(),s,s),A.bb(s,A.aH(B.aj,B.r,s,s,s),s,new A.arQ(this,a),s,s)],p),B.e,B.j,B.h),B.d,s,s,s,s,s,s,s,s,s,s,s),B.a0),B.d,s,s,s,s,s,s,s,B.at,s,s,s)}}
 A.asf.prototype={
 $1(a){var s,r,q,p
 for(s=a.gI(a),r=s.length,q=this.a,p=0;p<s.length;s.length===r||(0,A.t)(s),++p){new A.asd(q,s[p]).$0()
@@ -94899,31 +94902,37 @@ A.arP.prototype={
 $0(){},
 $S:0}
 A.arQ.prototype={
-$0(){var s,r,q,p="[DEFAULT]",o=$.j,n=(o==null?$.j=$.y():o).t(0,p)
-o=$.L()
-A.w(n,o,!0)
-s=A.A(new A.x(n))
+$0(){var s,r,q,p,o="[DEFAULT]",n=$.j,m=(n==null?$.j=$.y():n).t(0,o)
+n=$.L()
+A.w(m,n,!0)
+s=A.A(new A.x(m))
 r=this.a
-q=t.P
-A.D(s,s.gu().A("cStoneSales")).M(0).B(0,new A.arK(r),q)
+q=this.b
+p=t.P
+A.D(s,s.gu().A("cStoneSales")).M(0).B(0,new A.arK(r,q),p)
 s=$.j
-n=(s==null?$.j=$.y():s).t(0,p)
-A.w(n,o,!0)
-o=A.A(new A.x(n))
-A.D(o,o.gu().A("companies")).M(0).B(0,new A.arL(r),q)},
+m=(s==null?$.j=$.y():s).t(0,o)
+A.w(m,n,!0)
+n=A.A(new A.x(m))
+A.D(n,n.gu().A("companies")).M(0).B(0,new A.arL(r,q),p)},
 $S:0}
 A.arK.prototype={
-$1(a){var s,r,q,p
-for(s=a.gI(a),r=s.length,q=this.a,p=0;p<s.length;s.length===r||(0,A.t)(s),++p){new A.arG(s[p]).$0()
-q.c.Z()}},
+$1(a){var s,r,q,p,o,n,m,l,k,j
+for(s=a.gI(a),r=s.length,q=this.b,p=q.b,q=q.a,o=this.a,n=0;n<s.length;s.length===r||(0,A.t)(s),++n){m=s[n]
+l=m.b
+k=l.h(0,"invoice")
+j=m.a
+if(J.h(A.b(k,j),A.b(p.h(0,"invoice"),q))&&J.h(A.b(l.h(0,"cft"),j),A.b(p.h(0,"cft"),q))){new A.arG(m).$0()
+o.c.Z()}}},
 $S:2}
 A.arG.prototype={
 $0(){this.a.gbZ().a.b8(0)},
 $S:0}
 A.arL.prototype={
-$1(a){var s,r,q,p
-for(s=a.gI(a),r=s.length,q=this.a,p=0;p<s.length;s.length===r||(0,A.t)(s),++p){new A.arF(s[p]).$0()
-q.c.Z()}},
+$1(a){var s,r,q,p,o,n,m
+for(s=a.gI(a),r=s.length,q=this.b,p=q.b,q=q.a,o=this.a,n=0;n<s.length;s.length===r||(0,A.t)(s),++n){m=s[n]
+if(J.h(A.b(m.b.h(0,"id"),m.a),B.i.a2("chipstonesale",A.b(p.h(0,"invoice"),q)))){new A.arF(m).$0()
+o.c.Z()}}},
 $S:2}
 A.arF.prototype={
 $0(){this.a.gbZ().a.b8(0)},
